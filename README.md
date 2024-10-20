@@ -33,11 +33,31 @@ Ensure you have Python 3.x installed on your system. You'll also need the follow
 
 ## Installation
 Clone the repository and install the required packages:
-'''
+```
 git clone https://github.com/SandeepKR23/Review_scraper.git
 cd Review_scraper
 pip install -r requirements.txt
+```
+## Usage
+1. Configuration: Modify the target website URL and HTML tags in the configuration file (config.py) to suit the website you want to scrape.
 
-'''
+2. Run the Scraper: Execute the main script to start scraping:
+
+```
+python scraper.py
+
+```
+3. Output: The scraped reviews will be saved in the specified output file (output.csv or output.json).
+
+## Future Enhancements
+- Captcha Handling: Integrate with services like 2Captcha or implement strategies to bypass Captcha verification.
+- Headless Browser Support: Use Selenium or Playwright to handle websites that require JavaScript rendering.
+- Sentiment Analysis: Extend the project by adding sentiment analysis to automatically classify reviews as positive, negative, or neutral.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contributing
+If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. Contributions can include adding support for more websites, improving scraping logic, or enhancing export functionalities.
 
 
